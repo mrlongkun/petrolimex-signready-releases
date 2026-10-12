@@ -22,6 +22,16 @@ Người dùng có thể tải phiên bản mới nhất trực tiếp từ kho 
 > 📌 **Xem toàn bộ các bản phát hành:** [Danh sách Releases trên GitHub](https://github.com/mrlongkun/petrolimex-signready-releases/releases)
 
 ---
+## 🚀 Điểm mới nổi bật trong Phiên bản v2.0.2
+
+- 👥 **Bổ sung chức năng Thêm nhiều người ký:** Cho phép bấm `＋ Thêm người ký` linh hoạt ngay tại Bước 3 của Wizard. Hệ thống tự động nhận diện và tái tạo bảng chữ ký nhiều người ký chuẩn OpenXML mà không làm mất dữ liệu người ký hiện có.
+- ✍️ **Nâng cấp Thẩm quyền ký & Tiền tố chức vụ:** Hỗ trợ đầy đủ các tiền tố thẩm quyền ký chuẩn hành chính (`TM.`, `Q.`, `KT.`, `TL.`, `TUQ.`), cho phép chọn nhanh hoặc nhập dòng thẩm quyền bổ sung tự do (ví dụ: `TM. HỘI ĐỒNG THÀNH VIÊN`, `TL. GIÁM ĐỐC`, `KT. TỔNG GIÁM ĐỐC`).
+- 🔄 **Sắp xếp thứ tự & Quản lý ký nháy trực quan:** Bổ sung nút chuyển đổi thứ tự người ký (`↑` / `↓`), nút gỡ bỏ người ký (`✕ Xóa`), cùng hộp chọn `Ký nháy` độc lập cho từng vị trí người ký.
+- 🛠️ **Sửa lỗi vặt & Tối ưu hóa:**
+  - Khắc phục lỗi tương phản hiển thị chữ khi nhập trong ô tìm kiếm ở Chế độ Tối (Dark Theme).
+  - Tối ưu hóa thứ tự chèn bảng chữ ký, bảo toàn thứ tự người ký hiện có trước khi ghép người ký mới.
+  - Vượt qua toàn bộ **307 bài kiểm thử tự động** đạt độ tin cậy tuyệt đối (100% Passed).
+- ⚡ **Gói cập nhật vi sai Delta siêu nhẹ:** Tự động nâng cấp từ v2.0.1 lên v2.0.2 với gói vi sai chỉ **343 KB**.
 
 ## 🚀 Điểm mới nổi bật trong Phiên bản v2.0.1
 
