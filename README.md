@@ -22,6 +22,12 @@ Người dùng có thể tải phiên bản mới nhất trực tiếp từ kho 
 > 📌 **Xem toàn bộ các bản phát hành:** [Danh sách Releases trên GitHub](https://github.com/mrlongkun/petrolimex-signready-releases/releases)
 
 ---
+## 🚀 Điểm mới nổi bật trong Phiên bản v2.0.3
+- **Danh mục đơn vị trực tuyến:** Từ màn hình **Cài đặt & dữ liệu**, chọn **Tải danh mục online** để lấy danh mục Đồng Nai, Đà Nẵng hoặc Công ty Xăng dầu Khu vực II. Có thể xem trước dữ liệu rồi nạp, hoặc tải và nạp ngay.
+- **Dùng được khi mất mạng:** Nếu không tải được từ GitHub, ứng dụng dùng manifest và tệp Excel dự phòng được đóng gói trong thư mục `catalogs` khi có sẵn. Việc nạp vào SQLite chạy trong một giao dịch; lỗi khi lưu sẽ hoàn tác giao dịch.
+- **Danh bạ người ký:** Danh mục mẫu được rà soát theo thẩm quyền ký. Người quản trị vẫn cần kiểm tra thông tin đơn vị và người ký trước khi dùng cho văn bản thực tế.
+- **Ô ký và thẩm quyền:** Hỗ trợ chọn người ký, tiền tố như `TM.`, `KT.`, `TL.`, điều chỉnh chức danh theo trường hợp ký và xem trước bố cục trong thuật sĩ chuẩn hóa.
+
 ## 🚀 Điểm mới nổi bật trong Phiên bản v2.0.2
 
 - 👥 **Bổ sung chức năng Thêm nhiều người ký:** Cho phép bấm `＋ Thêm người ký` linh hoạt ngay tại Bước 3 của Wizard. Hệ thống tự động nhận diện và tái tạo bảng chữ ký nhiều người ký chuẩn OpenXML mà không làm mất dữ liệu người ký hiện có.
