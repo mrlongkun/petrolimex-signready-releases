@@ -1,0 +1,35 @@
+[
+  {
+    "id": "PLX_DNAI",
+    "name": "Công ty Xăng dầu Đồng Nai",
+    "short_name": "Petrolimex Đồng Nai",
+    "description": "24 lãnh đạo và 14 phòng ban / chi nhánh Petrolimex Đồng Nai",
+    "updated_at": "2026-10-19",
+    "download_url": "https://raw.githubusercontent.com/mrlongkun/petrolimex-signready-releases/main/catalogs/Danh_Muc_Petrolimex_Dong_Nai.xlsx",
+    "fallback_file_name": "Danh_Muc_Petrolimex_Dong_Nai.xlsx",
+    "unit_count": 14,
+    "user_count": 24
+  },
+  {
+    "id": "PLX_DNG",
+    "name": "Công ty Xăng dầu Đà Nẵng",
+    "short_name": "Petrolimex DNG",
+    "description": "Ban Giám đốc và các phòng nghiệp vụ Petrolimex Đà Nẵng",
+    "updated_at": "2026-10-15",
+    "download_url": "https://raw.githubusercontent.com/mrlongkun/petrolimex-signready-releases/main/catalogs/Danh_Muc_Petrolimex_Da_Nang.xlsx",
+    "fallback_file_name": "Danh_Muc_Petrolimex_Da_Nang.xlsx",
+    "unit_count": 4,
+    "user_count": 3
+  },
+  {
+    "id": "PLX_SGN",
+    "name": "Công ty Xăng dầu Khu vực II (Sài Gòn)",
+    "short_name": "Petrolimex SG",
+    "description": "Ban Giám đốc và các phòng nghiệp vụ Công ty Xăng dầu Khu vực II",
+    "updated_at": "2026-10-15",
+    "download_url": "https://raw.githubusercontent.com/mrlongkun/petrolimex-signready-releases/main/catalogs/Danh_Muc_Petrolimex_Sai_Gon.xlsx",
+    "fallback_file_name": "Danh_Muc_Petrolimex_Sai_Gon.xlsx",
+    "unit_count": 4,
+    "user_count": 3
+  }
+]
