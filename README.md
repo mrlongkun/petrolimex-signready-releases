@@ -77,7 +77,44 @@ Quản lý người ký, đơn vị ban hành và trạng thái hoạt động. 
 ### 5. Nhật ký và đối soát
 
 Lưu lịch sử phiên kiểm tra/chuẩn hóa, thời gian, kết quả, thông tin quy tắc và SHA-256 của tệp nguồn. Có thể tìm kiếm, lọc theo trạng thái/thời gian, xem chi tiết và xuất các dòng đang hiển thị ra CSV.
+📐 Thể thức văn bản theo Nghị định 30/2020/NĐ-CP
 
+SignReady tham chiếu **Phụ lục I của [Nghị định 30/2020/NĐ-CP về công tác văn thư](https://vanban.chinhphu.vn/default.aspx?docid=199378&pageid=27160)** khi rà soát văn bản hành chính. Các quy tắc được áp dụng theo loại văn bản; ứng dụng không thay thế việc người soạn thảo và văn thư kiểm tra tính đúng đắn của nội dung, thẩm quyền ký hay toàn bộ thể thức trước khi ban hành.
+
+| Nhóm thể thức | Yêu cầu tham chiếu và phạm vi kiểm tra |
+|---|---|
+| Khổ giấy và phông chữ | Nghị định quy định **A4**, phông **Times New Roman**, mã Unicode, màu đen. SignReady chưa kiểm tra đầy đủ các điều kiện này; cần xem lại trong Word. |
+| Lề trang | Nghị định yêu cầu **trên/dưới 2–2,5 cm, trái 3–3,5 cm, phải 1,5–2 cm**. SignReady kiểm tra các ngưỡng lề này. |
+| Đầu văn bản | SignReady rà soát quốc hiệu, tiêu ngữ, tên đơn vị, số/ký hiệu, địa danh và ngày tháng. Theo Nghị định, quốc hiệu cỡ **12–13 pt**, tiêu ngữ **13–14 pt**. Bộ kiểm tra hiện dùng **12 pt cho cả hai**; vì vậy phải đối chiếu cỡ chữ tiêu ngữ thủ công trước khi ban hành. |
+| Tên loại và trích yếu | SignReady kiểm tra vị trí và định dạng; công văn có dòng `V/v` riêng. Nghị định quy định tên loại và trích yếu của văn bản có tên loại cỡ **13–14 pt**; bộ kiểm tra hiện dùng ngưỡng **14–16 pt** cho tên loại. |
+| Nội dung | SignReady rà soát căn đều, thụt đầu dòng, khoảng cách đoạn và cỡ chữ. Bộ kiểm tra hiện chấp nhận **13–15 pt** cho thân văn bản; người dùng cần đối chiếu cỡ chữ theo từng thành phần thể thức của Nghị định. |
+| Chữ ký và nơi nhận | SignReady rà soát chức vụ, họ tên, tiền tố `TM.`, `KT.`, `TL.` và khối **Nơi nhận**. Người dùng phải xác nhận người ký thực sự có thẩm quyền. |
+
+Sơ đồ rút gọn dưới đây cho thấy các **ô/vùng thường gặp** khi kiểm tra một văn bản hành chính. Vị trí thực tế tùy loại văn bản; đây là hình minh họa, không phải mẫu Word để sao chép nguyên xi.
+
+```text
+┌─────────────────────────────────────────────────────────────────────────────────────┐
+│ SƠ ĐỒ CÁC Ô/VÙNG THƯỜNG GẶP TRÊN TRANG A4                                           │
+├─────────────────────────────────────────────────────────────────────────────────────┤
+│ Ô 2 · Cơ quan chủ quản/ban hành          │ Ô 1 · Quốc hiệu, tiêu ngữ                │
+│ Logo Petrolimex (nếu chọn)               │                                          │
+├─────────────────────────────────────────────────────────────────────────────────────┤
+│ Ô 3 · Số: [So]/... (Có số)               │ Ô 4 · Địa danh, [Ngay]/[Thang]/[Nam]     │
+│ Ô 5b · V/v ... (riêng công văn)          │                                          │
+├─────────────────────────────────────────────────────────────────────────────────────┤
+│ Ô 5a · TÊN LOẠI VĂN BẢN — Trích yếu nội dung                                        │
+├─────────────────────────────────────────────────────────────────────────────────────┤
+│ Ô 9a · Kính gửi: ... (khi loại văn bản cần)                                         │
+│ Ô 6  · Nội dung văn bản, căn cứ, điều/khoản...                                      │
+│         [Nhay<username>] (nếu có, trước Nơi nhận)                                   │
+├─────────────────────────────────────────────────────────────────────────────────────┤
+│ Ô 9b · Nơi nhận:                         │ Ô 7 · Quyền hạn/chức vụ người ký         │
+│ - ...                                    │ [KySo<username>]                         │
+│ - Lưu: VT, ...                           │ Họ và tên                                │
+└─────────────────────────────────────────────────────────────────────────────────────┘
+```
+
+Logo Petrolimex, cấu trúc bảng ký và các Key `[So]`, `[Ngay]`, `[KySo...]`, `[Nhay...]` là **quy tắc xử lý của SignReady/eOffice**; không phải thành phần bắt buộc cho mọi văn bản theo Nghị định 30. Ứng dụng chỉ yêu cầu các mục này khi nhóm văn bản, loại văn bản hoặc lựa chọn trong Wizard tương ứng cần đến chúng. Nếu kết quả còn cảnh báo, người dùng phải đọc và ghi lý do khi quyết định xuất tệp.
 ## 🏷️ Danh mục thẻ ký số
 
 | Thẻ mỏ neo | Mục đích | Ví dụ |
