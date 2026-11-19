@@ -1,5 +1,16 @@
 [
   {
+    "id": "PLX_BTN",
+    "name": "Chi nhánh Petrolimex Bắc Tây Ninh - Công ty TNHH MTV Petrolimex Tây Ninh",
+    "short_name": "Petrolimex Bắc Tây Ninh",
+    "description": "14 cán bộ lãnh đạo và 5 phòng ban Petrolimex Bắc Tây Ninh",
+    "updated_at": "2026-11-19",
+    "download_url": "https://raw.githubusercontent.com/mrlongkun/petrolimex-signready-releases/main/Danh_Muc_Petrolimex_Bac_Tay_Ninh.xlsx",
+    "fallback_file_name": "Danh_Muc_Petrolimex_Bac_Tay_Ninh.xlsx",
+    "unit_count": 5,
+    "user_count": 14
+  },
+  {
     "id": "PLX_DNAI",
     "name": "Công ty Xăng dầu Đồng Nai",
     "short_name": "Petrolimex Đồng Nai",
